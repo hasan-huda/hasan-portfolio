@@ -4,6 +4,9 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +15,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  githubLink,
+  link
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -20,6 +25,11 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const router = useRouter();
+
+  const handleProjectClick = () => {
+    router.push(link);
+  };
 
   return (
     <motion.div
@@ -29,11 +39,13 @@ export default function Project({
         opacity: opacityProgess,
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
+      onClick={handleProjectClick}
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[21rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+
+          <p className="mt-2 mb-1 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
@@ -46,6 +58,13 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <Link
+            href={githubLink}
+            className="mt-1.5 ml-10 flex w-44 text-sm items-center px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
+          >
+            <FaGithub className="mr-2" />
+            Github Repository
+          </Link>
         </div>
 
         <Image
