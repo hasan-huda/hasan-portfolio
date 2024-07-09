@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Graduated Bootcamp: Software Development",
     location: "Coding Dojo - New York City, NY",
     description:
-      "I graduated after 6 months of study, at the rigorous program I completed alongside my degree, intensively familiarizing myself here with languages like Python, Java, Mongo, Express, React, and others while developing, debugging, and deploying 10s of web applications",
+      "I graduated after 4 months of study, at the rigorous program I completed alongside my degree, intensively familiarizing myself here with languages like Python, Java, Mongo, Express, React, and others while developing, debugging, and deploying 10s of web applications",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - 2023",
   },
