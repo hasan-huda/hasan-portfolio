@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-      I am a recent graduate from Stony Brook University with a Bachelor’s degree in <span className="font-medium">Applied Mathematics and Statistics</span>. During my studies, I took extensive computer science courses, completing a majority of the Computer Science Engineering curriculum at my University and balanced my education with work at Chipotle and White Castle.
+      I am a recent graduate from Stony Brook University with a Bachelor’s degree in <span className="font-medium">Applied Mathematics and Statistics</span>. During my studies, I took extensive computer science courses, completing a majority of the Computer Science Engineering curriculum at my University and balanced my education with work at retail and fast food.
       </p>
       <p className="mb-3">
       My interest in software development from these computer science courses led me to complete a coding bootcamp, which I attended while still in school. This decision led to an invaluable internship opportunity at PSEG, a prominent utility company in the Northeastern United States, where <span className="font-medium">I worked as a developer for nearly a year.</span>
