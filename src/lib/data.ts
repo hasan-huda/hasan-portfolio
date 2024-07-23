@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import fiscalFitImg from "@/public/fiscalfit.png";
+import kangaImg from "@/public/KangaImg.png";
 import macGuardianImg from "@/public/macguardianImg.png";
 import bugTrackerImg from "@/public/bugtrackerss.png";
 
@@ -38,7 +38,7 @@ export const experiencesData = [
         title: "Graduated Bootcamp: Software Development",
         location: "Coding Dojo - New York City, NY",
         description:
-            "I graduated after 4 months of study, at the rigorous program I completed alongside my degree, intensively familiarizing myself here with languages like Python, Java, Mongo, Express, React, and others while developing, debugging, and deploying 10s of web applications",
+            "I graduated after 4 months of study, at the rigorous program I completed alongside my degree, intensively familiarizing myself here with languages like Python, Java, Mongo, Express, React, and others while developing, debugging, and deploying dozens of web applications",
         icon: React.createElement(LuGraduationCap),
         date: "2022 - 2023",
     },
@@ -74,12 +74,13 @@ export const projectsData = [
         description:
             "E-commerce site for custom macbook cases, with your personal images. Complete with firebase, stripe, and an admin dashboard.",
         tags: [
-            "Nextjs",
+            "NextJS",
             "TypeScript",
             "PostgreSQL",
             "React",
             "Tailwind",
             "Firebase",
+            "Stripe",
             "Prisma",
         ],
         imageUrl: macGuardianImg,
@@ -87,23 +88,30 @@ export const projectsData = [
         githubLink: "https://github.com/hasan-huda/macguardians",
     },
     {
-        title: "FiscalFit",
-        description:
-            "Frontend display promoting a financial tracker, complete with interactive features, highlighting stats and testimonials. I was a front-end developer.",
-        tags: ["React", "Tailwind", "HTML + CSS"],
-        imageUrl: fiscalFitImg,
-        link: "https://hasan-bugtracker-app.onrender.com",
-        githubLink: "https://github.com/hasan-huda/bank-app",
+        title: "KangaCook",
+        description: "Web app for Asian recipes. Under maintenance",
+        tags: [
+            "Django",
+            "Python",
+            "Typescript",
+            "NextJS",
+            "AWS (S3 & EC2)",
+            "Tailwind",
+            "Firebase",
+        ],
+        imageUrl: kangaImg,
+        link: "http://kangabucket-hh.s3-website.us-east-2.amazonaws.com",
+        githubLink: "https://github.com/hasan-huda/kangacook-backend",
     },
-    {
-        title: "BugTracker",
-        description:
-            "Web app to monitor software bugs across projects. Completed with userAuth and management, and admin capabilities.",
-        tags: ["React", "MongoDB", "Express", "MaterialUI"],
-        imageUrl: bugTrackerImg,
-        link: "https://hasan-fiscalfit.onrender.com",
-        githubLink: "https://github.com/hasan-huda/bugtracker-backend",
-    },
+    // {
+    //     title: "BugTracker",
+    //     description:
+    //         "Web app to monitor software bugs across projects. Completed with userAuth and management, and admin capabilities.",
+    //     tags: ["React", "MongoDB", "Express", "MaterialUI"],
+    //     imageUrl: bugTrackerImg,
+    //     link: "https://hasan-fiscalfit.onrender.com",
+    //     githubLink: "https://github.com/hasan-huda/bugtracker-backend",
+    // },
 
     // {
     //   title: "Word Analytics",
