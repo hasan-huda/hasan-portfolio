@@ -35,20 +35,12 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated Bootcamp: Software Development",
-        location: "Coding Dojo - New York City, NY",
+        title: "Headstarter AI - Software Engineer Fellow",
+        location: "New York City, New York",
         description:
-            "I graduated after 4 months of study, at the rigorous program I completed alongside my degree, intensively familiarizing myself here with languages like Python, Java, Mongo, Express, React, and others while developing, debugging, and deploying dozens of web applications",
-        icon: React.createElement(LuGraduationCap),
-        date: "2022 - 2023",
-    },
-    {
-        title: "Graduated College: Applied Maths & Statistics Degree",
-        location: "Stony Brook University - Stony Brook, NY",
-        description:
-            "Acquired Bachelor's of Science in Applied Mathematics and Statistics, while taking a great number of Computer Science courses, at the #1 ranked public University in NY. I was also the university's MSA Vice President, a club organization that served thousands of members within the University community",
-        icon: React.createElement(LuGraduationCap),
-        date: "2019 - 2024",
+            "As a fellow, I am to build 5 AI apps and APIs using NextJS, OpenAI, Pinecone, StripeAPI. I am to develop projects from design to deployment, leading 3 other engineering fellows using MVC design patterns. I am coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git and microservice patterns.",
+        icon: React.createElement(FaReact),
+        date: "2024 - Present",
     },
     {
         title: "PSEG Software Developer",
@@ -59,12 +51,20 @@ export const experiencesData = [
         date: "2023 - 2024",
     },
     {
-        title: "Headstarter AI - Software Engineer Fellow",
-        location: "New York City, New York",
+        title: "Graduated College: Applied Maths & Statistics Degree",
+        location: "Stony Brook University - Stony Brook, NY",
         description:
-            "As a fellow, I am to build 5 AI apps and APIs using NextJS, OpenAI, Pinecone, StripeAPI. I am to develop projects from design to deployment, leading 3 other engineering fellows using MVC design patterns. I am coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git and microservice patterns.",
-        icon: React.createElement(FaReact),
-        date: "2024 - Present",
+            "Acquired Bachelor's of Science in Applied Mathematics and Statistics, while taking a great number of Computer Science courses, at the #1 ranked public University in NY. I was also the university's MSA Vice President, a club organization that served thousands of members within the University community",
+        icon: React.createElement(LuGraduationCap),
+        date: "2019 - 2024",
+    },
+    {
+        title: "Graduated Bootcamp: Software Development",
+        location: "Coding Dojo - New York City, NY",
+        description:
+            "I graduated after 4 months of study, at the rigorous program I completed alongside my degree, intensively familiarizing myself here with languages like Python, Java, Mongo, Express, React, and others while developing, debugging, and deploying dozens of web applications",
+        icon: React.createElement(LuGraduationCap),
+        date: "2022 - 2023",
     },
 ] as const;
 
