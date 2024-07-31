@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import kangaImg from "@/public/KangaImg.png";
 import macGuardianImg from "@/public/macguardianImg.png";
-import bugTrackerImg from "@/public/bugtrackerss.png";
+import alfAjrImg from "@/public/AlfAjr.png"
 
 export const links = [
     {
@@ -69,6 +69,23 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "AlfAjr (50+ Users)",
+        description:
+            "Habit Builder for spirituality with Friend and Leaderboard functionality.",
+        tags: [
+            "NextJS",
+            "TypeScript",
+            "PostgreSQL",
+            "React",
+            "Tailwind",
+            "Firebase",
+            "Prisma",
+        ],
+        imageUrl: alfAjrImg,
+        link: "https://www.alf-ajr.com",
+        githubLink: "https://github.com/omar-t-ahmed/AlfAjr",
+    },
     {
         title: "MacGuardians",
         description:
